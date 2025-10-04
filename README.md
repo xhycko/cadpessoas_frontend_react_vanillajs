@@ -1,18 +1,16 @@
 # CRUD Desktop - Vanilla JavaScript
 
-Sistema de gerenciamento de pessoas desenvolvido em Vanilla JavaScript, HTML e CSS para navegação desktop.
+Sistema gerenciamento de pessoas em Vanilla JavaScript, HTML e CSS para navegação desktop.
 
 ## Características
-
-- **Vanilla JavaScript**: Sem frameworks, apenas JavaScript puro
+- **Vanilla JavaScript**: Sem frameworks, JavaScript puro
 - **Design Desktop-First**: Otimizado para navegadores desktop
-- **Tema Claro**: Interface limpa e moderna com tema claro
+- **Tema Claro**: Interface limpa e moderna
 - **PWA**: Progressive Web App com manifest
-- **Responsivo**: Adapta-se a diferentes tamanhos de tela
-- **API REST**: Consome a mesma API do projeto React mobile
+- **Responsivo**: Adapta-se a diferentes telas
+- **API REST**: Consome mesma API do projeto React mobile
 
-## Estrutura do Projeto
-
+## Estrutura
 ```
 crud-vanilla-desktop/
 ├── index.html          # Página principal
@@ -20,26 +18,23 @@ crud-vanilla-desktop/
 ├── css/
 │   └── styles.css      # Estilos CSS
 ├── js/
-│   ├── api.js          # Serviços da API
+│   ├── api.js          # Serviços API
 │   ├── utils.js        # Funções utilitárias
 │   └── app.js          # Aplicação principal
-└── README.md
 ```
 
 ## Funcionalidades
-
-### ✅ Implementadas
-- [x] Listagem de pessoas em grid
-- [x] Formulário de cadastro/edição
+- [x] Listagem pessoas em grid
+- [x] Formulário cadastro/edição
 - [x] Exclusão com confirmação
-- [x] Validação de formulários
+- [x] Validação formulários
 - [x] Feedback visual (toasts)
-- [x] Status da API em tempo real
+- [x] Status API em tempo real
 - [x] Design responsivo
 - [x] Navegação SPA
 - [x] Tratamento de erros
 
-### 🎨 Design
+## Design
 - **Tema**: Claro e moderno
 - **Layout**: Desktop-first com grid de cards
 - **Navegação**: Menu horizontal no header
@@ -48,28 +43,28 @@ crud-vanilla-desktop/
 
 ## Como Usar
 
-1. **Iniciar API REST**:
-   ```bash
-   cd gabarito_cadpessoas_rest
-   ./mvnw spring-boot:run
-   ```
+### Iniciar API REST
+```bash
+cd gabarito_cadpessoas_rest
+./mvnw spring-boot:run
+```
 
-2. **Servir arquivos**:
-   ```bash
-   # Com Python
-   python -m http.server 8000
-   
-   # Com Node.js
-   npx serve .
-   
-   # Com PHP
-   php -S localhost:8000
-   ```
+### Servir arquivos
+```bash
+# Python
+python -m http.server 8000
 
-3. **Acessar**: http://localhost:8000
+# Node.js
+npx serve .
+
+# PHP
+php -S localhost:8000
+```
+
+### Acessar
+http://localhost:8000
 
 ## API Endpoints
-
 - `GET /api/pessoas` - Listar pessoas
 - `GET /api/pessoas/{id}` - Buscar pessoa
 - `POST /api/pessoas` - Criar pessoa
@@ -77,7 +72,7 @@ crud-vanilla-desktop/
 - `DELETE /api/pessoas/{id}` - Excluir pessoa
 - `GET /api/health` - Status da API
 
-## Diferenças do React Mobile
+## Diferenças React Mobile
 
 | Aspecto | React Mobile | Vanilla Desktop |
 |---------|-------------|-----------------|
@@ -89,7 +84,6 @@ crud-vanilla-desktop/
 | **Formulários** | Modais | Páginas dedicadas |
 
 ## Tecnologias
-
 - **HTML5**: Estrutura semântica
 - **CSS3**: Grid, Flexbox, Custom Properties
 - **JavaScript ES6+**: Classes, Async/Await, Modules
@@ -97,7 +91,6 @@ crud-vanilla-desktop/
 - **PWA**: Service Worker ready
 
 ## Compatibilidade
-
 - Chrome 60+
 - Firefox 55+
 - Safari 12+
