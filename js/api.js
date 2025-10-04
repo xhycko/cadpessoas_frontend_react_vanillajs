@@ -63,15 +63,11 @@ class API {
         try {
             const response = await fetch(`${this.baseURL}/health`);
             return {
-                status: response.ok ? 'online' : 'offline',
-                statusCode: response.status,
-                timestamp: new Date().toISOString()
+                status: response.ok ? 'online' : 'offline'
             };
         } catch (error) {
             return {
-                status: 'offline',
-                error: error.message,
-                timestamp: new Date().toISOString()
+                status: 'offline'
             };
         }
     }
