@@ -6,9 +6,9 @@
   --secondary: #10b981;
   --secondary-hover: #059669;
   --success: #10b981;
-  --warning: #f59e0b;
+  /* --warning: #f59e0b; */ /* Unused */
   --error: #ef4444;
-  --info: #3b82f6;
+  /* --info: #3b82f6; */ /* Unused */
   
   --background: #ffffff;
   --surface: #f8fafc;
@@ -389,7 +389,7 @@ body {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background-color: var(--warning);
+  background-color: #f59e0b; /* Direct color instead of unused --warning */
 }
 
 .status-dot.online {
@@ -435,9 +435,9 @@ body {
   color: var(--text-primary);
 }
 
-.footer-icon {
-  font-size: 1.2rem;
-}
+/* .footer-icon { */ /* Unused class */
+/*   font-size: 1.2rem; */
+/* } */
 
 .footer-info {
   color: var(--text-secondary);
