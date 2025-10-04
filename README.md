@@ -35,7 +35,6 @@ crud-vanilla-desktop/
 - [x] Tratamento de erros
 
 ## Design
-- **Tema**: Claro e moderno
 - **Layout**: Desktop-first com grid de cards
 - **Navegação**: Menu horizontal no header
 - **Tipografia**: System fonts (-apple-system, Segoe UI)
@@ -72,26 +71,9 @@ http://localhost:8000
 - `DELETE /api/pessoas/{id}` - Excluir pessoa
 - `GET /api/health` - Status da API
 
-## Diferenças React Mobile
-
-| Aspecto | React Mobile | Vanilla Desktop |
-|---------|-------------|-----------------|
-| **Framework** | React + Bootstrap | Vanilla JS + CSS |
-| **Tema** | Escuro | Claro |
-| **Layout** | Mobile-first | Desktop-first |
-| **Navegação** | Menu hamburger | Menu horizontal |
-| **Cards** | Lista vertical | Grid de cards |
-| **Formulários** | Modais | Páginas dedicadas |
-
 ## Tecnologias
 - **HTML5**: Estrutura semântica
 - **CSS3**: Grid, Flexbox, Custom Properties
 - **JavaScript ES6+**: Classes, Async/Await, Modules
 - **Fetch API**: Requisições HTTP
 - **PWA**: Service Worker ready
-
-## Compatibilidade
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
