@@ -1,79 +1,57 @@
-# CRUD Desktop - Vanilla JavaScript
+# CRUD Pessoas - Vanilla JS
 
-Sistema gerenciamento de pessoas em Vanilla JavaScript, HTML e CSS para navegação desktop.
+Sistema CRUD para gerenciamento de pessoas. Vanilla JavaScript, sem frameworks.
 
-## Características
-- **Vanilla JavaScript**: Sem frameworks, JavaScript puro
-- **Design Desktop-First**: Otimizado para navegadores desktop
-- **Tema Claro**: Interface limpa e moderna
-- **PWA**: Progressive Web App com manifest
-- **Responsivo**: Adapta-se a diferentes telas
-- **API REST**: Consome mesma API do projeto React mobile
+## Stack
+- HTML5, CSS3, JavaScript ES6+
+- Fetch API para requisições REST
+- SPA com navegação por abas
 
 ## Estrutura
 ```
-crud-vanilla-desktop/
-├── index.html          # Página principal
-├── manifest.json       # Configuração PWA
-├── css/
-│   └── styles.css      # Estilos CSS
+├── index.html
+├── css/styles.css
 ├── js/
-│   ├── api.js          # Serviços API
-│   ├── utils.js        # Funções utilitárias
-│   └── app.js          # Aplicação principal
+│   ├── api.js    # Comunicação REST
+│   ├── utils.js  # Utilitários
+│   └── app.js    # Aplicação principal
 ```
 
 ## Funcionalidades
-- [x] Listagem pessoas em grid
-- [x] Formulário cadastro/edição
-- [x] Exclusão com confirmação
-- [x] Validação formulários
-- [x] Feedback visual (toasts)
-- [x] Status API em tempo real
-- [x] Design responsivo
-- [x] Navegação SPA
-- [x] Tratamento de erros
+- CRUD completo (Create, Read, Update, Delete)
+- Validação de formulários
+- Feedback visual (toasts/modals)
+- Monitoramento status API
+- Interface responsiva
 
-## Design
-- **Layout**: Desktop-first com grid de cards
-- **Navegação**: Menu horizontal no header
-- **Tipografia**: System fonts (-apple-system, Segoe UI)
-- **Cores**: Azul primário (#2563eb) com tons de cinza
+## Campos
+- Nome (obrigatório)
+- Email (obrigatório, validado)
+- Telefone (opcional)
+- Gênero (radio: Masculino/Feminino/Não Informado)
+- Data Nascimento (obrigatório)
 
-## Como Usar
+## Execução
 
-### Iniciar API REST
+### API
 ```bash
 cd gabarito_cadpessoas_rest
 ./mvnw spring-boot:run
 ```
 
-### Servir arquivos
+### Frontend
 ```bash
-# Python
 python -m http.server 8000
-
-# Node.js
+# ou
 npx serve .
-
-# PHP
-php -S localhost:8000
 ```
 
-### Acessar
-http://localhost:8000
+Acesso: http://localhost:8000
 
-## API Endpoints
-- `GET /api/pessoas` - Listar pessoas
-- `GET /api/pessoas/{id}` - Buscar pessoa
-- `POST /api/pessoas` - Criar pessoa
-- `PUT /api/pessoas/{id}` - Atualizar pessoa
-- `DELETE /api/pessoas/{id}` - Excluir pessoa
-- `GET /api/health` - Status da API
-
-## Tecnologias
-- **HTML5**: Estrutura semântica
-- **CSS3**: Grid, Flexbox, Custom Properties
-- **JavaScript ES6+**: Classes, Async/Await, Modules
-- **Fetch API**: Requisições HTTP
-- **PWA**: Service Worker ready
+## Endpoints
+- `GET /api/pessoas` - Listar
+- `GET /api/pessoas/{id}` - Buscar
+- `POST /api/pessoas` - Criar
+- `PUT /api/pessoas/{id}` - Atualizar
+- `DELETE /api/pessoas/{id}` - Remover
+- `GET /api/health` - Status
